@@ -1,5 +1,8 @@
 # Ingenieurs
-![](img/5.png)
+![](src/assets/img/5.png)
+![](src/assets/img/4.png)
+![](src/assets/img/3.png)
+![](src/assets/img/6.png)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
 
 ## Development server
