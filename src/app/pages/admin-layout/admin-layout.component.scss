@@ -1,0 +1,54 @@
+.card .header {
+  padding: 15px 15px 0;
+}
+.card .content {
+  padding: 15px 15px 10px 15px;
+}
+.card .title {
+  margin: 4;
+  color:
+  #333333;
+  font-weight: 300;
+}
+
+.card {
+  border-radius: 4px;
+  box-shadow: 0 1px 2px
+rgba(0, 0, 0, 0.05), 0 0 0 1px
+rgba(63, 63, 68, 0.1);
+background-color:
+  #FFFFFF;
+  margin-bottom: 30px;
+}
+.card .category, .card label {
+  font-size: 14px;
+  font-weight: 400;
+  color:
+  #9A9A9A;
+  margin-bottom: 0px;
+}
+
+.now-ui-icons{
+  font-size: medium;
+}
+
+.card .title {
+  margin: 0;
+  color:
+  #333333;
+  font-weight: 300;
+}
+
+.card .category, .card label {
+  font-size: 14px;
+  font-weight: 400;
+  color:
+  #9A9A9A;
+  margin-bottom: 0px;
+}
+
+.sidebarBlack:after{
+
+  background: linear-gradient(to bottom, #000 0%, #000 100%);
+  background-size: 150% 150%;
+}

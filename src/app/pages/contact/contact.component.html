@@ -1,0 +1,68 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <div class="page-header clear-filter" filter-color="orange">
+    <div class="page-header-image rellax-header" data-rellax-speed="-7">
+
+    </div>
+    <div class="container">
+      <div class="content-center brand">
+
+        <h3>Envoyez nous des remarques, des idées ...</h3>
+
+        <div class="section section-tabs">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 ml-auto col-xl-6 mr-auto">
+                <div class="card card-form">
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                      <h3 class="text-center title form-title">Contactez nous</h3>
+
+                      <form #f="ngForm" (ngSubmit)="onSendMessage(f.value);f.reset();">
+                        <div class="form-group">
+                          <label class="text-danger">{{errorMessage}}</label>
+                        </div>
+                        <div *ngIf="message" class="alert alert-success" role="alert">
+                          {{message}}
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" name="nom" ngModel placeholder="Nom" type="text" value="">
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" name="email" ngModel placeholder="Email" type="mail" value="">
+                        </div>
+                        <div class="form-group">
+                          <textarea class="form-control" ngModel name="message" placeholder="Message" id="exampleFormControlTextarea1"
+                            rows="2"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <button type="submit" class="form-control"
+                            class="btn btn-primary btn-round btn-block">Envoyer</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-10 ml-auto col-xl-6 mr-auto">
+                <div class="simplecard ">
+                  <div class="nav-tabs-navigation" data-tabs-color="orange">
+                    <div class="nav-tabs-wrapper">
+                      <img class="contact-image " src="assets/img/contact.png" alt="contact">
+                    </div>
+                  </div>
+                </div>
+                <!-- End Tabs on plain Card -->
+              </div>
+            </div>
+            <div>
+              <h6 class="footer">Ingénieur © 2020, Tous droits réservés</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

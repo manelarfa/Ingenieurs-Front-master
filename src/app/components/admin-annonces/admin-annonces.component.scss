@@ -1,0 +1,38 @@
+
+@import "src/assets/sass/light-bootstrap-dashboard-all.scss";
+
+.form-check {
+  padding-left: 0rem;
+}
+label{
+  font-weight: 400 !important;
+}
+
+@import "src/assets/sass/light-bootstrap-dashboard-all.scss";
+
+.form-check {
+  padding-left: 0rem;
+}
+label{
+  font-weight: 400 !important;
+}
+
+//======================================================
+.modal-content.modal-header {
+  border-bottom: solid 0.1px !important;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-bottom: 0;
+  padding-left: 24px;
+}
+.urgence{
+  color: grey;
+}
+
+.form-control{
+  height: 100%;
+}
+
+.legend{
+  width: 100%;
+}

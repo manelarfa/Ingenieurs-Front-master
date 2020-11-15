@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <div class="page-header clear-filter" filter-color="orange">
+    <div class="page-header-image rellax-header" data-rellax-speed="-7"
+      style="background-image: url('assets/img/header.jpg');">
+
+    </div>
+    <div class="container">
+      <div class="content-center brand">
+
+        <h3>Gérer les cycles ingénieurs avec toute simplicité</h3>
+
+        <h4>Grâce au premier portail des ingénieurs </h4>
+        <a *ngIf="!isAuthentificated()" [routerLink]="'/login'" class="btn btn-primary h5">S'authentifier</a>
+        <a *ngIf="isAuthentificated()" [routerLink]="'/menu'" class="btn btn-primary h5">Menu principal</a>
+
+      </div>
+<!--       <h6 class="category category-absolute">Designed by
+        <a href="https://invisionapp.com/" target="_blank">
+          <img src="assets/img/invision-white-slim.png" class="invision-logo" />
+        </a>. Coded by
+        <a href="https://www.creative-tim.com" target="_blank">
+          <img src="assets/img/creative-tim-white-slim2.png" class="creative-tim-logo" />
+        </a>.
+      </h6> -->
+    </div>
+  </div>
+</div>

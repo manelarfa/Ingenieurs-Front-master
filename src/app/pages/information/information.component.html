@@ -1,0 +1,63 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <div class="page-header clear-filter" filter-color="orange">
+    <div class="page-header-image rellax-header" data-rellax-speed="-7">
+
+    </div>
+    <div class="container">
+      <div class="content-center brand">
+
+        <h3>Agenda ingenieurs 2020/2021</h3>
+
+        <div class="section section-tabs">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="simplecard ">
+                  <div class="nav-tabs-navigation" data-tabs-color="orange">
+                    <div class="nav-tabs-wrapper">
+                      <div class="table-full-width">
+                        <table class="table table-hover table-striped">
+                          <thead>
+                            <tr>
+                              <th class="text-center">Date </th>
+                              <th class="text-center"> Titre</th>
+                              <th class="text-center"> Contenu</th>
+                              <th class="text-center"> Urgence</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr *ngFor=" let a of annonces">
+                              <td class="text-center">
+                               {{a.date|date}}
+                              </td>
+                              <td class="text-center">
+                                {{a.title}}
+                               </td>
+                               <td class="text-center">
+                                {{a.contenu}}
+                               </td>
+                               <td class="text-center">
+                                {{a.urgence}}
+                               </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Tabs on plain Card -->
+              </div>
+            </div>
+            <div>
+              <h6 class="footer">Ingénieur © 2020, Tous droits réservés</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

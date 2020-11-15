@@ -1,0 +1,32 @@
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.nav > li {
+  width: 100%;
+}
+.simple-text {
+  text-decoration: none;
+}
+
+.brand {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+}
+
+.brand a {
+  border: solid 1px !important;
+  background: rgba(255, 255, 255, 0.14);
+  opacity: 1;
+  color: #ffffff;
+
+}
+#message {
+  margin: 0 !important;
+  font-size: 9px !important;
+}
+

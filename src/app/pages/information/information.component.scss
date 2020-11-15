@@ -1,0 +1,121 @@
+.rellax-header {
+  background-color: white;
+}
+
+.page-header[filter-color="orange"] {
+  background: white;
+}
+
+:host::ng-deep
+  app-navbar
+  .navbar
+  .navbar-nav
+  .nav-item.active
+  .nav-link:not(.btn),
+:host::ng-deep
+  app-navbar
+  .navbar
+  .navbar-nav
+  .nav-item
+  .nav-link:not(.btn):focus,
+:host::ng-deep
+  app-navbar
+  .navbar
+  .navbar-nav
+  .nav-item
+  .nav-link:not(.btn):hover,
+:host::ng-deep
+  app-navbar
+  .navbar
+  .navbar-nav
+  .nav-item
+  .nav-link:not(.btn):active {
+  background-color: rgba(66, 56, 56, 0.2);
+  border-radius: 0.1875rem;
+}
+
+:host::ng-deep app-navbar .navbar a:not(.btn):not(.dropdown-item) {
+  color: #000 !important;
+}
+.navbar a {
+  color: #000 !important;
+}
+
+.navbar a:not(.btn):not(.dropdown-item) {
+  color: #000000;
+}
+
+h3,
+.h3 {
+  font-size: 1.825em;
+  margin-bottom: 30px;
+  line-height: 1.4em;
+  color: black;
+}
+
+.simplecard {
+  border: 0;
+  border-radius: 0.1875rem;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.section-tabs {
+  background: #fff;
+}
+
+.card-form {
+  border: 0;
+  border-radius: 1.188rem;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  padding: 40px 25px 20px 25px;
+}
+
+.contact-image {
+  height: 370px;
+  width: auto;
+}
+
+.section {
+  padding: 30px 0;
+  position: relative;
+  background: #ffffff;
+}
+
+textarea.form-control {
+  border: 1px solid #e3e3e3;
+  border-radius: 9px;
+}
+
+.form-title {
+  margin-bottom: 5px;
+  font-size: 1.4em;
+}
+
+.footer {
+  color: #bbb6b6;
+  font-size: 0.7em;
+  margin-top: 30px;
+}
+
+.table > thead > tr > th {
+  border-bottom-width: 1px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  background-color: #fbaf41;
+  padding: 20px 0px 20px 0px;
+}
+
+td {
+  color: #595454;
+}

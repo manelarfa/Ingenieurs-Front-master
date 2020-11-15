@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div [ngClass]="{'sidebar':'true','sidebarBlack':isAdmin()}" data-color="red" data-image="">
+    <app-sidebar></app-sidebar>
+    <div class="sidebar-background" style="background-image: url(assets/img/sidebar-5.jpg)"></div>
+  </div>
+
+  <div class="main-panel">
+    <app-menubar></app-menubar>
+    <div class="main-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

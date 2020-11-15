@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="500">
+  <div class="container">
+    <div class="navbar-translate">
+      <div class="text-center">
+        <img src="assets/img/logo.png" width="40" height="40" alt="logo" />&nbsp;
+        <a class="navbar-brand" [routerLink]="['/index']" placement="bottom"
+          ngbTooltip="Designed by Invision. Coded by Creative Tim">
+          Ingénieurs
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
+        (click)="sidebarToggle()">
+        <span class="navbar-toggler-bar bar1"></span>
+        <span class="navbar-toggler-bar bar2"></span>
+        <span class="navbar-toggler-bar bar3"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/index'">
+            <i class="now-ui-icons business_bank"></i>
+            <p>Acceuil</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/annonce'">
+            <i class="now-ui-icons ui-1_calendar-60"></i>
+            <p>Annonces</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLinkActive]="'active'" [routerLink]="'/contact'">
+            <i class="now-ui-icons ui-2_chat-round"></i>
+            <p>Contact</p>
+          </a>
+        </li>
+
+        <li (click)="OnDeconnexion()"  class="nav-item cursor" *ngIf="isAuthentificated()">
+          <a class="nav-link">
+            <i class="now-ui-icons media-1_button-power"></i>
+            <p>Déconnecter</p>
+          </a>
+        </li>
+        <li *ngIf="!isAuthentificated()" class="nav-item">
+          <a class="nav-link" [routerLink]="'/login'">
+            <i class="now-ui-icons business_badge"></i>
+            <p>Authentification</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

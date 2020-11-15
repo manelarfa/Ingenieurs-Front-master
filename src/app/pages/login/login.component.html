@@ -1,0 +1,49 @@
+<div class="full section section-tabs">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 ml-auto col-xl-10 mr-auto">
+        <div class="card">
+          <div class="nav-tabs-navigation">
+            <div class="row">
+              <div class="col-5 fullImage imageBackground"></div>
+              <div class="col-7 formlogin">
+                <div class="content-center1">
+                  <h3 class="text-center title">Bienvenue à Ingénieurs</h3>
+                  <p class="text-center  description">Joindre la solutions la plus utilisé par
+                    les ingénieurs dans le monde entier.</p>
+                  <br>
+                  <br>
+                  <form #f="ngForm" (ngSubmit)="onLogin(f.value)">
+                    <div class="form-group">
+                      <label class="text-danger">{{errorMessage}}</label>
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" name="email" ngModel placeholder="Email" type="text" value="">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" type="password" name="password" ngModel placeholder="Mot de passe"
+                        value="">
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="form-control"
+                        class="btn btn-primary btn-round btn-block">S'authentifier</button>
+                    </div>
+                  </form>
+                  <br>
+                  <br>
+                  <p class="text-center  description">Vous n'avez pas un compte ? <a href="#">contactez-nous</a></p>
+                  <br>
+                  <p class="text-center  description">
+                    <a [routerLink]="'/index'"><i
+                        class="now-ui-icons business_bank"></i><br><span>Acceuil</span></a><br>
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
